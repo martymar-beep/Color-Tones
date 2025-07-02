@@ -1,0 +1,153 @@
+*, *::before, 
+*::after { 
+    box-sizing: border-box; 
+    } 
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif; 
+    background-color: #fffbef ;
+}
+
+.page-layout{
+    display: block;
+    margin: 3em auto;
+    width: 90%;
+    min-height: 90vh;
+    max-width: 550px;
+    background-color: white;
+    border: 2px solid black; 
+}
+
+/*title header*/
+
+.site-header{
+  text-align: center;
+  background-color: #fdf9e7; 
+  border: 8px solid transparent; 
+  border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1; 
+  border-image-slice: 1;
+  /* box-shadow: 0 0 0 2px black; Black outline */  
+}
+
+h1{
+    margin-bottom: 0;  
+}
+
+p{
+    margin-top: 0;
+}
+
+/*color & dropdown choices*/
+
+.color-choices{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+}
+
+.color-input{
+    height: 2.125em;
+    width: 4em;
+    margin: 1em 0;
+    border: .5px solid #D1D5DB;  
+ }
+ 
+ .color-input:hover{
+  cursor: pointer;
+ }
+ 
+ .dropdown select{
+     width: 100%;
+     border: 1px solid #D1D5DB;
+     padding-top: .7em;
+     padding-bottom: .7em;
+     padding-right: 8em;
+     border-radius: 6px;
+     font-size: .75rem;
+     color: #111827;
+     font-weight: 400;
+
+ }
+ 
+.color-choices .get-btn{
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+    font-size: 0.5rem;
+    font-weight: 500; 
+    padding: 1.3em 0.6em;
+    background: #ffffff;
+    color: #374151; 
+ }
+ 
+ .get-btn:hover{
+  background: #fdf9e7; 
+  color: orangered;
+  cursor: pointer;
+ }
+ 
+ /*color results*/
+ 
+.color-palette{
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   justify-content: center;
+   text-align: center;
+ 
+ }
+ 
+.color-swatch {
+  width: auto;
+  height: 410px;
+}
+
+/*hex codes*/
+.hex-values, .color-code {
+  font-size: 0.75em;
+  font-weight: 500;
+  color: #2B283A;
+  margin-top: 0.5em;
+}
+
+/*media queries*/
+
+/*color & dropdown choices*/
+@media (max-width: 500px) {
+  
+  .dropdown select {
+    padding-right: 2em;
+    font-size: 0.7rem;
+  }
+
+  .color-choices {
+    flex-direction: column;
+    gap: 0.25em;
+  }
+
+  .get-btn {
+    padding: 0.8em 1em;
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 600px) {
+  
+  .color-palette {
+    grid-template-columns: 1fr;
+    margin-top: .5em
+  }
+
+  .color-swatch {
+    height: 200px; /* reduce swatch height */
+  }
+}
+
+@media (max-width: 600px) {
+  .page-layout {
+    width: 95%;
+    margin: 2em auto;
+  }
+}
+
