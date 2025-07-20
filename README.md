@@ -34,7 +34,7 @@ What I really enjoyed about this project — although it proved to be challengin
 ### 🙋‍♀️ Author
 
 Margaret Martin  
-[Portfolio – coming soon]  
+[Portfolio](https://astounding-muffin-e43077.netlify.app/)    
 [LinkedIn](https://www.linkedin.com/in/margaret-martin-55807438/)  
 Email: devmartin [at] codes [dot] com
 
